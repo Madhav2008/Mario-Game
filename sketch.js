@@ -40,7 +40,7 @@ function setup() {
   mario1.scale = 0.5 ;
   mario1.visible = false ;
   
-  ground = createSprite(windowWidth/3,630,10);
+  ground = createSprite(windowWidth/3,680);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   ground.velocityX = -(100);
@@ -58,7 +58,7 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
-  invisibleGround = createSprite(200,580,400,10);
+  invisibleGround = createSprite(200,630,400,10);
   invisibleGround.visible = false;
   
   bricks = createSprite(windowWidth+10,windowHeight+10);
@@ -166,7 +166,7 @@ function spawnbricks(){
 
 function spawnObstacles() {
   if(frameCount % 90 === 0) {
-    var obstacle = createSprite(600,550,10,40);
+    var obstacle = createSprite(600,600,10,40);
     obstacle.velocityX = -(10);
     obstacle.addAnimation("obstacles",obstacleimage);
     obstacle.scale = 1;
